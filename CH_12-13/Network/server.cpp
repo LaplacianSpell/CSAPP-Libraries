@@ -27,7 +27,7 @@ int main() {
     */
     cliaddr.sin_addr.s_addr = INADDR_ANY; // Hard code 0x0
 
-    /* Bind IP */
+    /* Bind IP: 4000 socket */
     if (bind(listenfd, cliaddr, sizeof(cliaddr)) == -1) {
         std::cerr << "Server error: Cannot bind to Server socket address!" << std::endl;
         return -1;
